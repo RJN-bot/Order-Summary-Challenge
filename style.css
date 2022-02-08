@@ -1,0 +1,115 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap");
+
+:root {
+  --Paleblue: hsl(225, 100%, 94%);
+  --Brightblue: hsl(245, 75%, 52%);
+  --Verypaleblue: hsl(225, 100%, 98%);
+  --Desaturatedblue: hsl(224, 23%, 55%);
+  --Darkblue: hsl(223, 47%, 23%);
+}
+
+html {
+  font-size: 16px;
+}
+body {
+  height: 100vh;
+  background: url(/images/pattern-background-mobile.svg);
+  background-size: cover;
+  /* background-color: black; */
+  font-family: "Red Hat Display", sans-serif;
+}
+
+.container {
+  width: 315px;
+  margin-inline: auto;
+  /* display: none; */
+}
+
+.card {
+  background-color: white;
+  border-radius: 1rem;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+img {
+  width: 100%;
+  border-radius: 1rem 1rem 0 0;
+}
+
+h1 {
+  font-size: 1.35rem;
+  text-align: center;
+  margin-top: 1.75rem;
+  font-weight: 900;
+  color: var(--Darkblue);
+}
+
+p {
+  color: var(--Desaturatedblue);
+  text-align: center;
+  margin-inline: 1.5rem;
+  line-height: 1.5;
+  font-weight: 500;
+  font-size: 1rem;
+}
+
+.plan {
+  background-color: var(--Verypaleblue);
+  display: flex;
+  justify-content: space-around;
+  border-radius: 0.5rem;
+  margin: 1rem;
+  margin-top: 2rem;
+}
+
+.plan img {
+  width: 2.75rem;
+  height: 2.75rem;
+  margin-block: 0.75rem;
+}
+
+.plan .price {
+  margin-block: 1rem;
+  margin-right: 1.5em;
+}
+
+.plan .price h2 {
+  font-size: 0.9rem;
+  margin: 0;
+}
+
+.plan .price p {
+  font-size: 0.9rem;
+  margin: 0;
+  text-align: left;
+}
+
+.plan a {
+  margin-block: auto;
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+
+button {
+  background-color: var(--Brightblue);
+  margin: 0.7rem 1.25rem 0 1.25rem;
+  width: 17.5rem;
+  height: 3rem;
+  color: white;
+  font-weight: 900;
+  border-radius: 0.75rem;
+  border: none;
+  font-size: 0.9rem;
+}
+
+#cancel {
+  color: var(--Desaturatedblue);
+  font-size: 0.9rem;
+  text-align: center;
+  padding-bottom: 1rem;
+  margin-top: 2rem;
+  font-weight: 900;
+}
