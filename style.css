@@ -103,27 +103,35 @@ p {
   font-weight: 600;
 }
 
+.buttons {
+  display: flex;
+  flex-direction: column;  margin: 0 1rem;
+}
+
 #payment {
   background-color: var(--Brightblue);
-  margin: 0.7rem 1.25rem 0 1.25rem;
-  width: 17.5rem;
+
+  width: auto;
   height: 3rem;
   color: white;
   font-weight: 900;
   border-radius: 0.75rem;
   border: none;
   font-size: 0.9rem;
+  flex-grow: 1;
 }
 
 #cancel {
   color: var(--Desaturatedblue);
   font-size: 0.9rem;
   text-align: center;
-  padding-bottom: 1rem;
-  margin-top: 2rem;
+  padding: 1rem 0;
   font-weight: 900;
   background: none;
   border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 @media (min-width: 768px) {
