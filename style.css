@@ -62,48 +62,49 @@ h1 {
 p {
   color: var(--Desaturatedblue);
   text-align: center;
-  /* margin-inline: 1.5rem; */
   line-height: 1.5;
   font-weight: 500;
   font-size: 1rem;
+  margin-block: 1.25rem;
+  margin-bottom: 1.75rem;
 }
 
 .plan {
   background-color: var(--Verypaleblue);
   display: flex;
   justify-content: space-around;
-  border-radius: 0.5rem;
-  margin: 1.5rem 0;
-  margin-top: 2rem;
-  padding: 0.25rem 0.5rem;
+  border-radius: 1rem;
+  margin: 1rem 0;
+  padding: 1rem 0.5rem;
+  padding-left: 0rem;
 }
 
 .priceinfo img {
-  width: 2.75rem;
-  height: 2.75rem;
+  width: 3rem;
+  height: auto;
   /* margin-block: 0.75rem; */
-  margin-inline: 1rem;
+  margin-right: 0.5rem;
 }
 
 .price {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-evenly;
   align-items: flex-start;
-  align-content: space-between;
+  margin-inline: 0.75rem;
+  height: 3rem;
 }
 
 .priceinfo {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
   /* padding-block: 2rem; */
-  justify-content: center;
+  justify-content: start;
   align-items: center;
 }
 
 .plan .price h2 {
-  font-size: 0.9rem;
+  font-size: 0.8rem;
   margin: 0;
 }
 
@@ -139,14 +140,16 @@ p {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-top: 0.5rem;
+  margin-top: 0.75rem;
+  box-shadow: 0 1rem 1.5rem hsl(245, 75%, 52%, 0.4);
 }
 
 #cancel {
   color: var(--Desaturatedblue);
   font-size: 0.9rem;
   text-align: center;
-  margin: 1.5rem 0;
+  margin: 1.75rem 0;
+  margin-bottom: 2rem;
   /* padding: 1.2rem 0; */
   font-weight: 900;
   background: none;
@@ -154,7 +157,6 @@ p {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-bottom: 2rem;
 }
 
 main {
