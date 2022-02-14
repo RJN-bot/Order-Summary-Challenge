@@ -30,10 +30,10 @@ body {
   height: 50vh;
 }
 
-.container {
-  width: 315px;
+/* .container {
+  width: 35px;
   margin-inline: auto;
-}
+} */
 
 .card {
   background-color: white;
@@ -42,6 +42,8 @@ body {
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
+  min-width: 85vw;
+  margin: 0 auto;
 }
 
 img {
@@ -52,7 +54,7 @@ img {
 h1 {
   font-size: 1.35rem;
   text-align: center;
-  margin-top: 1.75rem;
+  margin-top: 2rem;
   font-weight: 900;
   color: var(--Darkblue);
 }
@@ -60,7 +62,7 @@ h1 {
 p {
   color: var(--Desaturatedblue);
   text-align: center;
-  margin-inline: 1.5rem;
+  /* margin-inline: 1.5rem; */
   line-height: 1.5;
   font-weight: 500;
   font-size: 1rem;
@@ -71,19 +73,33 @@ p {
   display: flex;
   justify-content: space-around;
   border-radius: 0.5rem;
-  margin: 1rem;
+  margin: 1.5rem 0;
   margin-top: 2rem;
+  padding: 0.25rem 0.5rem;
 }
 
-.plan img {
+.priceinfo img {
   width: 2.75rem;
   height: 2.75rem;
-  margin-block: 0.75rem;
+  /* margin-block: 0.75rem; */
+  margin-inline: 1rem;
 }
 
-.plan .price {
-  margin-block: 1rem;
-  margin-right: 1.5em;
+.price {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  align-content: space-between;
+}
+
+.priceinfo {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  /* padding-block: 2rem; */
+  justify-content: center;
+  align-items: center;
 }
 
 .plan .price h2 {
@@ -92,7 +108,7 @@ p {
 }
 
 .plan .price p {
-  font-size: 0.9rem;
+  font-size: 0.8rem;
   margin: 0;
   text-align: left;
 }
@@ -105,12 +121,12 @@ p {
 
 .buttons {
   display: flex;
-  flex-direction: column;  margin: 0 1rem;
+  flex-direction: column;
+  /* margin: 0 1.5rem; */
 }
 
 #payment {
   background-color: var(--Brightblue);
-
   width: auto;
   height: 3rem;
   color: white;
@@ -119,19 +135,30 @@ p {
   border: none;
   font-size: 0.9rem;
   flex-grow: 1;
+  padding: 1.6rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 0.5rem;
 }
 
 #cancel {
   color: var(--Desaturatedblue);
   font-size: 0.9rem;
   text-align: center;
-  padding: 1rem 0;
+  margin: 1.5rem 0;
+  /* padding: 1.2rem 0; */
   font-weight: 900;
   background: none;
   border: none;
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-bottom: 2rem;
+}
+
+main {
+  margin: 0 1.5rem;
 }
 
 @media (min-width: 768px) {
