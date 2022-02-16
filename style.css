@@ -114,6 +114,7 @@ p {
   margin-block: auto;
   font-size: 0.85rem;
   font-weight: 600;
+  color: var(--Brightblue);
 }
 
 .buttons {
@@ -160,6 +161,20 @@ main {
   margin: 0 10%;
 }
 
+/* Hover states */
+.plan a:hover {
+  text-decoration: none;
+  color: hsl(245, 75%, 52%, 0.7);
+}
+
+#payment:hover {
+  background-color: hsl(245, 75%, 52%, 0.7);
+}
+
+#cancel:hover {
+  color: black;
+}
+/* Media query */
 @media (min-width: 768px) {
   .bg__img {
     background: url("./images/pattern-background-desktop.svg") no-repeat
