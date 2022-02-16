@@ -11,6 +11,7 @@
 html {
   font-size: 16px;
 }
+
 body {
   height: 100vh;
   background-color: var(--Paleblue);
@@ -30,11 +31,6 @@ body {
   height: 50vh;
 }
 
-/* .container {
-  width: 35px;
-  margin-inline: auto;
-} */
-
 .card {
   background-color: white;
   border-radius: 1rem;
@@ -42,8 +38,9 @@ body {
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
-  min-width: 85vw;
+  width: 85vw;
   margin: 0 auto;
+  box-shadow: 0 1rem 1.5rem hsl(245, 75%, 52%, 0.2);
 }
 
 img {
@@ -52,7 +49,8 @@ img {
 }
 
 h1 {
-  font-size: 1.35rem;
+  /* font-size: 1.35rem; */
+  font-size: max(3.25vmin, 1.35rem);
   text-align: center;
   margin-top: 2rem;
   font-weight: 900;
@@ -82,7 +80,6 @@ p {
 .priceinfo img {
   width: 3rem;
   height: auto;
-  /* margin-block: 0.75rem; */
   margin-right: 0.5rem;
 }
 
@@ -98,18 +95,17 @@ p {
 .priceinfo {
   display: flex;
   flex-direction: row;
-  /* padding-block: 2rem; */
   justify-content: start;
   align-items: center;
 }
 
 .plan .price h2 {
-  font-size: 0.8rem;
+  font-size: 0.9rem;
   margin: 0;
 }
 
 .plan .price p {
-  font-size: 0.8rem;
+  font-size: 0.88rem;
   margin: 0;
   text-align: left;
 }
@@ -123,7 +119,6 @@ p {
 .buttons {
   display: flex;
   flex-direction: column;
-  /* margin: 0 1.5rem; */
 }
 
 #payment {
@@ -142,6 +137,7 @@ p {
   justify-content: center;
   margin-top: 0.75rem;
   box-shadow: 0 1rem 1.5rem hsl(245, 75%, 52%, 0.4);
+  cursor: pointer;
 }
 
 #cancel {
@@ -150,17 +146,18 @@ p {
   text-align: center;
   margin: 1.75rem 0;
   margin-bottom: 2rem;
-  /* padding: 1.2rem 0; */
   font-weight: 900;
   background: none;
   border: none;
   display: flex;
   align-items: center;
   justify-content: center;
+  cursor: pointer;
 }
 
 main {
-  margin: 0 1.5rem;
+  /* margin: 0 1.5rem; */
+  margin: 0 10%;
 }
 
 @media (min-width: 768px) {
@@ -168,5 +165,8 @@ main {
     background: url("./images/pattern-background-desktop.svg") no-repeat
       center/cover;
     height: 50vh;
+  }
+  .card {
+    max-width: 450px;
   }
 }
